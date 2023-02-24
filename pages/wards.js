@@ -4,7 +4,7 @@ import Image from "next/image";
 import Style from "../styles/wards.module.css";
 import apc from "../public/apc.png";
 import Link from "next/link";
-import Data from "../components/ElectionData";
+import Data from "../Components/ElectionData";
 
 const wards = () => {
   const kosofeData = Data.kosofe;
