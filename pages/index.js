@@ -26,10 +26,24 @@ export default function Home() {
           />
         </div>
         <h3>Welcome to Hon. Kafilat Ogbara Result Channel </h3>
-        <p>Click next to proceed</p>
-        <Link href={{ pathname: "wards" }}>
-          <button>Next</button>
-        </Link>
+
+        <div className={Style.buttons}>
+          <div>
+            <Link href={{ pathname: "summary" }}>
+              <button>Result Summary</button>
+            </Link>
+          </div>
+          <div>
+            <Link href={{ pathname: "wards" }}>
+              <button>Result Breakdown</button>
+            </Link>
+          </div>
+          <div>
+            <Link href={{ pathname: "ResultInputPage" }}>
+              <button>Input</button>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

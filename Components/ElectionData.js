@@ -1,7 +1,5 @@
-import '@/styles/globals.css'
-
-export default function App({ Component, pageProps }) {
-  const kosofeData = [
+const Data = {
+  kosofe: [
     {
       wardNo: 1,
       wardName: "OWORONSHOKI WARD",
@@ -12,8 +10,8 @@ export default function App({ Component, pageProps }) {
           Remark: "EXISTING PU",
           Result: {
             Presidential: {
-              APC: 0,
-              PDP: 0,
+              APC: 3464,
+              PDP: 560,
               LP: 0,
               NNPP: 0,
               ADC: 0,
@@ -2502,7 +2500,7 @@ export default function App({ Component, pageProps }) {
     },
     {
       wardNo: 2,
-      wardName: "IFKO/SOLUYI",
+      wardName: "IFAKO/SOLUYI",
       pollingUnits: [
         {
           PU_No: "001",
@@ -4722,6 +4720,7 @@ export default function App({ Component, pageProps }) {
         },
       ],
     },
+
     {
       wardNo: 3,
       wardName: "ANTHONY/AJAO ESTATE/MENDE/MARYLAND",
@@ -25246,7 +25245,7 @@ export default function App({ Component, pageProps }) {
         },
       ],
     },
-  ];
+  ],
+};
 
-  return <Component {...pageProps} data={kosofeData} />;
-}
+export default Data;
