@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import Style from "../styles/summary.module.css";
-import Data from "../components/ElectionData";
+import Data from "../Components/ElectionData";
 import apc from "../public/apc.png";
 
 const summary = () => {
