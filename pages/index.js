@@ -39,9 +39,9 @@ export default function Home() {
             </Link>
           </div>
           <div>
-            <Link href={{ pathname: "ResultInputPage" }}>
+            <a href="https://election-collation-app.vercel.app/ResultInputPage">
               <button>Input</button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

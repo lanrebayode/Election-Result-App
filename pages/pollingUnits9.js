@@ -23,7 +23,7 @@ const pollenUnits1 = () => {
     wardName: "AGBOYI II",
   };
 
-  const pollingUnits = Data.kosofe[0].pollingUnits;
+  const pollingUnits = Data.kosofe[8].pollingUnits;
 
   return (
     <div className={Style.wards}>
@@ -88,6 +88,128 @@ const pollenUnits1 = () => {
               )}
             </p>
           ))}
+        </div>
+
+        <p>WARD SUMMARY</p>
+        <div className={resultStyle.resultDisplay}>
+          <h3>{ward1.wardName} RESULT SUMMARY</h3>
+
+          <div className={resultStyle.pres}>
+            <h4>PRESIDENTIAL</h4>
+            <p>
+              APC:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return previousValue + currentValue.Result.Presidential.APC;
+              }, 0)}
+              , PDP:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 + currentValue.Result.Presidential.PDP * 1
+                );
+              }, 0)}
+              , LP:
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 + currentValue.Result.Presidential.LP * 1
+                );
+              }, 0)}
+              , NNPP:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 + currentValue.Result.Presidential.NNPP * 1
+                );
+              }, 0)}
+              , ADC:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 + currentValue.Result.Presidential.ADC * 1
+                );
+              }, 0)}
+              ,
+            </p>
+          </div>
+
+          <div className={resultStyle.pres}>
+            <h4>LAGOS EAST SENETORIAL</h4>
+            <p>
+              APC:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue + currentValue.Result.LagosEastSenatorial.APC
+                );
+              }, 0)}
+              , PDP:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 +
+                  currentValue.Result.LagosEastSenatorial.PDP * 1
+                );
+              }, 0)}
+              , LP:
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 +
+                  currentValue.Result.LagosEastSenatorial.LP * 1
+                );
+              }, 0)}
+              , NNPP:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 +
+                  currentValue.Result.LagosEastSenatorial.NNPP * 1
+                );
+              }, 0)}
+              , ADC:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 +
+                  currentValue.Result.LagosEastSenatorial.ADC * 1
+                );
+              }, 0)}
+              ,
+            </p>
+          </div>
+
+          <div className={resultStyle.pres}>
+            <h4>HOUSE OF REPRESENTATIVE</h4>
+            <p>
+              APC:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue + currentValue.Result.HouseOfRepresentative.APC
+                );
+              }, 0)}
+              , PDP:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 +
+                  currentValue.Result.HouseOfRepresentative.PDP * 1
+                );
+              }, 0)}
+              , LP:
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue +
+                  currentValue.Result.HouseOfRepresentative.LP * 1
+                );
+              }, 0)}
+              , NNPP:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 +
+                  currentValue.Result.HouseOfRepresentative.NNPP * 1
+                );
+              }, 0)}
+              , ADC:{" "}
+              {pollingUnits.reduce(function (previousValue, currentValue) {
+                return (
+                  previousValue * 1 +
+                  currentValue.Result.HouseOfRepresentative.ADC * 1
+                );
+              }, 0)}
+              ,
+            </p>
+          </div>
         </div>
       </div>
     </div>
