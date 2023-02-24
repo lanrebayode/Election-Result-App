@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Head from "next/head";
-import ElectionPage from "../components/ElectionPage";
+import ElectionPage from "../Components/ElectionPage";
 import { useState } from "react";
 
 export default function Home({ posts }) {

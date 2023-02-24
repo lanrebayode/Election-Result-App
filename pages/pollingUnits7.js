@@ -5,7 +5,7 @@ import Link from "next/link";
 import Style from "../styles/wards.module.css";
 import resultStyle from "../styles/resultStyle.module.css";
 import apc from "../public/apc.png";
-import Data from "../components/ElectionData";
+import Data from "../Components/ElectionData";
 
 const pollenUnits1 = () => {
   const [dropResult, setDropResult] = useState(null);
