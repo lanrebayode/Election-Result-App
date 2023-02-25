@@ -2497,7 +2497,7 @@ const Data = {
           },
         },
       ],
-    },
+    }, //1
     {
       wardNo: 2,
       wardName: "IFAKO/SOLUYI",
@@ -2564,25 +2564,25 @@ const Data = {
           Remark: "EXISTING PU",
           Result: {
             Presidential: {
-              APC: 0,
-              PDP: 0,
-              LP: 0,
-              NNPP: 0,
-              ADC: 0,
+              APC: "27",
+              PDP: "3",
+              LP: "57",
+              NNPP: "3",
+              ADC: "1",
             },
             LagosEastSenatorial: {
-              APC: 0,
-              PDP: 0,
+              APC: "34",
+              PDP: "35",
               LP: 0,
-              NNPP: 0,
+              NNPP: "3",
               ADC: 0,
             },
             HouseOfRepresentative: {
-              APC: 0,
-              PDP: 0,
+              APC: "39",
+              PDP: "33",
               LP: 0,
-              NNPP: 0,
-              ADC: 0,
+              NNPP: "3",
+              ADC: "8",
             },
           },
         },
@@ -4719,7 +4719,7 @@ const Data = {
           },
         },
       ],
-    },
+    }, //2
 
     {
       wardNo: 3,
@@ -6154,7 +6154,7 @@ const Data = {
           },
         },
       ],
-    },
+    }, //3
     {
       wardNo: 4,
       wardName: "OJOTA/OGUDU",
@@ -9382,7 +9382,7 @@ const Data = {
           },
         },
       ],
-    },
+    }, //4
     {
       wardNo: 5,
       wardName: "KETU/ALAPERE/AGIDI/ORISIGUN/KOSOFE/AJELOGO/AKANIMOD",
@@ -14401,7 +14401,7 @@ const Data = {
           },
         },
       ],
-    },
+    }, //5
     {
       wardNo: 6,
       wardName: "IKOSI KETU/MILE I2/AGILITI/MAIDAN",
@@ -19785,7 +19785,7 @@ const Data = {
           },
         },
       ],
-    },
+    }, //6
     {
       wardNo: 7,
       wardName: "ISHERI‐OLOWO‐IRA/SHANGISHA/MAGODO PHASE I & II",
@@ -23264,7 +23264,7 @@ const Data = {
           },
         },
       ],
-    },
+    }, //7
     {
       wardNo: 8,
       wardName: "AGBOYI I",
@@ -23282,15 +23282,15 @@ const Data = {
               ADC: 0,
             },
             LagosEastSenatorial: {
-              APC: 0,
-              PDP: 0,
+              APC: "78",
+              PDP: "9",
               LP: 0,
               NNPP: 0,
               ADC: 0,
             },
             HouseOfRepresentative: {
-              APC: 0,
-              PDP: 0,
+              APC: "76",
+              PDP: "10",
               LP: 0,
               NNPP: 0,
               ADC: 0,
@@ -23359,22 +23359,22 @@ const Data = {
           Remark: "EXISTING PU",
           Result: {
             Presidential: {
-              APC: 0,
-              PDP: 0,
-              LP: 0,
-              NNPP: 0,
-              ADC: 0,
+              APC: "0",
+              PDP: "0",
+              LP: "0",
+              NNPP: "0",
+              ADC: "0",
             },
             LagosEastSenatorial: {
-              APC: 0,
-              PDP: 0,
+              APC: "0",
+              PDP: "0",
               LP: 0,
               NNPP: 0,
               ADC: 0,
             },
             HouseOfRepresentative: {
-              APC: 0,
-              PDP: 0,
+              APC: "0",
+              PDP: "0",
               LP: 0,
               NNPP: 0,
               ADC: 0,
@@ -23438,7 +23438,7 @@ const Data = {
           },
         },
       ],
-    },
+    }, //8
     {
       wardNo: 9,
       wardName: "AGBOYI II",
@@ -23584,7 +23584,7 @@ const Data = {
           },
         },
       ],
-    },
+    }, //9
 
     {
       wardNo: 10,
@@ -25244,7 +25244,7 @@ const Data = {
           },
         },
       ],
-    },
+    }, //10
   ],
 };
 
