@@ -10,7 +10,7 @@ const Data = {
           Remark: "EXISTING PU",
           Result: {
             Presidential: {
-              APC: 344444,
+              APC: 0,
               PDP: 0,
               LP: 0,
               NNPP: 0,
