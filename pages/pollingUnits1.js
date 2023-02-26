@@ -100,7 +100,9 @@ const pollenUnits1 = () => {
             <p>
               APC:{" "}
               {pollingUnits.reduce(function (previousValue, currentValue) {
-                return previousValue + currentValue.Result.Presidential.APC;
+                return (
+                  previousValue * 1 + currentValue.Result.Presidential.APC * 1
+                );
               }, 0)}
               , PDP:{" "}
               {pollingUnits.reduce(function (previousValue, currentValue) {
@@ -136,7 +138,8 @@ const pollenUnits1 = () => {
               APC:{" "}
               {pollingUnits.reduce(function (previousValue, currentValue) {
                 return (
-                  previousValue + currentValue.Result.LagosEastSenatorial.APC
+                  previousValue * 1 +
+                  currentValue.Result.LagosEastSenatorial.APC * 1
                 );
               }, 0)}
               , PDP:{" "}
@@ -177,7 +180,8 @@ const pollenUnits1 = () => {
               APC:{" "}
               {pollingUnits.reduce(function (previousValue, currentValue) {
                 return (
-                  previousValue + currentValue.Result.HouseOfRepresentative.APC
+                  previousValue * 1 +
+                  currentValue.Result.HouseOfRepresentative.APC * 1
                 );
               }, 0)}
               , PDP:{" "}
