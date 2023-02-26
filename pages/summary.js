@@ -28,51 +28,69 @@ const summary = () => {
 
   kosofeData.map((ward) => {
     PreAPC += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.Presidential.APC;
+      return previousValue * 1 + currentValue.Result.Presidential.APC * 1;
     }, 0);
     PrePDP += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.Presidential.PDP;
+      return previousValue * 1 + currentValue.Result.Presidential.PDP * 1;
     }, 0);
     PreLP += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.Presidential.LP;
+      return previousValue * 1 + currentValue.Result.Presidential.LP * 1;
     }, 0);
     PreNNPP += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.Presidential.NNPP;
+      return previousValue * 1 + currentValue.Result.Presidential.NNPP * 1;
     }, 0);
     PreADC += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.Presidential.ADC;
+      return previousValue * 1 + currentValue.Result.Presidential.ADC * 1;
     }, 0);
 
     LESAPC += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.LagosEastSenatorial.APC;
+      return (
+        previousValue * 1 + currentValue.Result.LagosEastSenatorial.APC * 1
+      );
     }, 0);
     LESPDP += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.LagosEastSenatorial.PDP;
+      return (
+        previousValue * 1 + currentValue.Result.LagosEastSenatorial.PDP * 1
+      );
     }, 0);
     LESLP += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.LagosEastSenatorial.LP;
+      return previousValue * 1 + currentValue.Result.LagosEastSenatorial.LP * 1;
     }, 0);
     LESNNPP += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.LagosEastSenatorial.NNPP;
+      return (
+        previousValue * 1 + currentValue.Result.LagosEastSenatorial.NNPP * 1
+      );
     }, 0);
     LESADC += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.LagosEastSenatorial.ADC;
+      return (
+        previousValue * 1 + currentValue.Result.LagosEastSenatorial.ADC * 1
+      );
     }, 0);
 
     HORAPC += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.HouseOfRepresentative.APC;
+      return (
+        previousValue * 1 + currentValue.Result.HouseOfRepresentative.APC * 1
+      );
     }, 0);
     HORPDP += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.HouseOfRepresentative.PDP;
+      return (
+        previousValue * 1 + currentValue.Result.HouseOfRepresentative.PDP * 1
+      );
     }, 0);
     HORLP += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.HouseOfRepresentative.LP;
+      return (
+        previousValue * 1 + currentValue.Result.HouseOfRepresentative.LP * 1
+      );
     }, 0);
     HORNNPP += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.HouseOfRepresentative.NNPP;
+      return (
+        previousValue * 1 + currentValue.Result.HouseOfRepresentative.NNPP * 1
+      );
     }, 0);
     HORADC += ward.pollingUnits.reduce(function (previousValue, currentValue) {
-      return previousValue + currentValue.Result.HouseOfRepresentative.ADC;
+      return (
+        previousValue * 1 + currentValue.Result.HouseOfRepresentative.ADC * 1
+      );
     }, 0);
   });
 
