@@ -7,8 +7,9 @@ import resultStyle from "../styles/resultStyle.module.css";
 import apc from "../public/apc.png";
 import Data from "../Components/ElectionData";
 
-const pollenUnits1 = () => {
+const pollenUnits = () => {
   const [dropResult, setDropResult] = useState(null);
+  let dataa = Data.kosofe[0];
 
   const openResults = (i) => {
     if (!dropResult) {
@@ -20,11 +21,11 @@ const pollenUnits1 = () => {
   };
 
   const ward1 = {
-    wardNo: 1,
-    wardName: "OWORONSHOKI WARD",
+    wardNo: dataa.wardNo,
+    wardName: dataa.wardName,
   };
 
-  const pollingUnits = Data.kosofe[0].pollingUnits;
+  const pollingUnits = dataa.pollingUnits;
 
   return (
     <div className={Style.ward1}>
@@ -221,4 +222,4 @@ const pollenUnits1 = () => {
   );
 };
 
-export default pollenUnits1;
+export default pollenUnits;

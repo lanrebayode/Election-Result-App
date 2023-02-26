@@ -7,8 +7,9 @@ import resultStyle from "../styles/resultStyle.module.css";
 import apc from "../public/apc.png";
 import Data from "../Components/ElectionData";
 
-const pollenUnits1 = () => {
+const pollenUnits = () => {
   const [dropResult, setDropResult] = useState(null);
+  let dataa = Data.kosofe[7];
 
   const openResults = (i) => {
     if (!dropResult) {
@@ -18,15 +19,16 @@ const pollenUnits1 = () => {
     } else setDropResult(i);
     console.log(dropResult);
   };
+
   const ward1 = {
-    wardNo: 8,
-    wardName: "AGBOYI I",
+    wardNo: dataa.wardNo,
+    wardName: dataa.wardName,
   };
 
-  const pollingUnits = Data.kosofe[7].pollingUnits;
+  const pollingUnits = dataa.pollingUnits;
 
   return (
-    <div className={Style.wards}>
+    <div className={Style.ward1}>
       <div className={Style.wards_box}>
         <div className={Style.wards_box_head}>
           <Image
@@ -47,7 +49,7 @@ const pollenUnits1 = () => {
               {pollingUnit.PU_No}
               {"."} {"  "} {pollingUnit.PU_Name}
               {dropResult === i + 1 ? (
-                <div className={resultStyle.resultDisplay}>
+                <div className={Style.resultDisplay}>
                   <h3>{pollingUnit.PU_Name} RESULT SUMMARY</h3>
 
                   <div className={resultStyle.pres}>
@@ -99,7 +101,9 @@ const pollenUnits1 = () => {
             <p>
               APC:{" "}
               {pollingUnits.reduce(function (previousValue, currentValue) {
-                return previousValue + currentValue.Result.Presidential.APC;
+                return (
+                  previousValue * 1 + currentValue.Result.Presidential.APC * 1
+                );
               }, 0)}
               , PDP:{" "}
               {pollingUnits.reduce(function (previousValue, currentValue) {
@@ -135,7 +139,8 @@ const pollenUnits1 = () => {
               APC:{" "}
               {pollingUnits.reduce(function (previousValue, currentValue) {
                 return (
-                  previousValue + currentValue.Result.LagosEastSenatorial.APC
+                  previousValue * 1 +
+                  currentValue.Result.LagosEastSenatorial.APC * 1
                 );
               }, 0)}
               , PDP:{" "}
@@ -176,7 +181,8 @@ const pollenUnits1 = () => {
               APC:{" "}
               {pollingUnits.reduce(function (previousValue, currentValue) {
                 return (
-                  previousValue + currentValue.Result.HouseOfRepresentative.APC
+                  previousValue * 1 +
+                  currentValue.Result.HouseOfRepresentative.APC * 1
                 );
               }, 0)}
               , PDP:{" "}
@@ -216,4 +222,4 @@ const pollenUnits1 = () => {
   );
 };
 
-export default pollenUnits1;
+export default pollenUnits;
